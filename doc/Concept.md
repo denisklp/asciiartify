@@ -34,7 +34,7 @@ k3d, Minikube, and Kind are tools used for deploying Kubernetes clusters in a lo
 
 ## 4. Demo
 
-![Demo](path_to_your_demo.gif)
+![Demo](demo.gif)
 
 ## 5. Conclusions
 
