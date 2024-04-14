@@ -32,13 +32,14 @@ k3d, Minikube, and Kind are tools used for deploying Kubernetes clusters in a lo
 | Minikube | - Supports multi-node clusters<br>- Built-in add-ons for monitoring and management     | - Can be resource intensive on local machine<br>- Slower startup |
 | Kind     | - Uses Docker containers as nodes<br>- Easy setup and teardown                          | - Limited to single-node clusters                                |
 
-## 4. Demo
+## 4. Docker licensing and Podman
+Docker's shift to a commercial model for some use cases, such as production environments, has raised concerns about cost and licensing compliance for some users. This change has prompted exploration of alternative container runtimes like Podman.
+Podman is a daemonless container engine for developing, managing, and running OCI Containers on Linux. It provides a Docker-compatible CLI and can run containers without requiring a separate daemon process, which can simplify container management and improve security. Ask your legal team to get you more detailed overview on possible Docker licensing issues.
+
+## 5. Demo
 
 ![Demo](demo.gif)
 
-## 5. Conclusions
-
-- **k3d**: Ideal for quick and lightweight local Kubernetes clusters, suitable for single-node development environments.
-- **Minikube**: Offers a more comprehensive local Kubernetes experience with support for multi-node clusters and additional monitoring and management features.
-- **Kind**: Best suited for scenarios where you need to create Kubernetes clusters using Docker containers as nodes, with easy setup and teardown for testing and development purposes.
+## 6. Conclusions
+In conclusion, k3d would be a preferable choice for described scenario, if single-node clusters are suitable. Its lightweight and fast deployment make it ideal for quickly setting up Kubernetes cluster for PoC development and testing. Additionally, its integrated container registry and easy cluster management features can streamline the process of deploying and managing your application. Take in account, if your PoC development for some reasons requires multi-node clusters, Minikube might be an option, as it offers support for this. 
 
