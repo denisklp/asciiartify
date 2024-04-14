@@ -8,9 +8,10 @@ The ArgoCD application health status is currently "Progressing" due to the inabi
 
 ![Progressing Status Screenshot](mvp-1.png)
 
-To resolve the issue with the load balancer, the deployment has been switched to use a NodePort instead using values.yaml file. The ArgoCD application health status is now "Healthy" with the NodePort configuration. This can be seen in the screenshot below:
+To resolve the issue with the load balancer, the deployment has been switched to use a NodePort instead using values.yaml file. The ArgoCD automatically synced app state on GitHub commit and application health status is now "Healthy" with the NodePort configuration. This can be seen in the screenshot and demo below:
 
 ![Healthy Status Screenshot](mvp-2.png)
+![Demo0](demo-mvp-1.gif)
 
 ## Access
 
